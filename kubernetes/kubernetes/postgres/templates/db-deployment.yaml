@@ -68,7 +68,7 @@ metadata:
     release: {{.Release.Name | quote }}
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
   annotations:
-    "helm.sh/created": {{.Release.Time.Seconds | quote }}
+    "helm.sh/created"
 spec:
   replicas: 1
   strategy: {}
