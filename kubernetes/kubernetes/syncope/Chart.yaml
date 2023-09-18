@@ -15,7 +15,7 @@
 # specific language governing permissions and limitations
 # under the License.
 apiVersion: v1
-name: basic
+name: basic1
 description: Deploys Syncope
 version: 1
 appVersion: 3.0.5
