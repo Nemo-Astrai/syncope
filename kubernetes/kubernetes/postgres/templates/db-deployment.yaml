@@ -67,8 +67,6 @@ metadata:
     heritage: {{.Release.Service | quote }}
     release: {{.Release.Name | quote }}
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
-  annotations:
-    "helm.sh/created"
 spec:
   replicas: 1
   strategy: {}
