@@ -58,7 +58,7 @@ spec:
     requests:
       storage: {{.Values.pv.storage}}
 ---
-apiVersion: extensions/v1beta1
+apiVersion: extensions/v1
 kind: Deployment
 metadata:
   name: "{{.Values.databaseConfig.name}}"
