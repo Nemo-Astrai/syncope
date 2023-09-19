@@ -69,7 +69,7 @@ metadata:
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
 spec:
   selector:
-    matchLabels:
+    labels:
       app: "{{.Values.databaseConfig.name}}"
   replicas: 1
   strategy: {}
