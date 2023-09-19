@@ -63,7 +63,6 @@ kind: Deployment
 metadata:
   name: "{{.Values.databaseConfig.name}}"
   labels:
-    name: "{{.Values.databaseConfig.name}}"
     heritage: {{.Release.Service | quote }}
     release: {{.Release.Name | quote }}
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
