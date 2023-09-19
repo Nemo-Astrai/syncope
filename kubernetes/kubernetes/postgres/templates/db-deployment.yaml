@@ -68,6 +68,9 @@ metadata:
     release: {{.Release.Name | quote }}
     chart: "{{.Chart.Name}}-{{.Chart.Version}}"
 spec:
+  selector:
+    matchLabels:
+      app: postgres
   replicas: 1
   strategy: {}
   template:
