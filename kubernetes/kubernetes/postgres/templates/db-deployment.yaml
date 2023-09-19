@@ -61,6 +61,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: "postgres"
   labels:
     heritage: {{.Release.Service | quote }}
     release: {{.Release.Name | quote }}
@@ -75,7 +76,7 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        name: "{{.Values.databaseConfig.name}}"
+        name: "postgres"
     spec:
       securityContext:
         fsGroup: 1000
