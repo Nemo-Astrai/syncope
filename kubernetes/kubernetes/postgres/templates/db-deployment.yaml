@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    chart: basic-1
+    chart: basic
     name: postgres
   name: postgres
 spec:
